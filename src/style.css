@@ -1,3 +1,11 @@
+:root {
+  --clr-primary: #f0c27b;
+  --clr-neutral-lt: #f4f4f9;
+  --clr-neutral-dk: #333333;
+  --ff-base: Inter, Roboto, 'Helvetica Neue',
+    'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -6,6 +14,9 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: var(--clr-neutral-lt);
+  color: var(--clr-neutral-dk);
+  font-family: var(--ff-base);
 }
 
 input,
@@ -20,4 +31,25 @@ button {
 
 ul {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+header {
+  background: var(--clr-neutral-dk);
+  color: var(--clr-neutral-lt);
+  padding: 0.65rem;
+}
+
+nav button {
+  background-color: var(--clr-neutral-dk);
+  border: 2px solid transparent;
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+nav button:hover {
+  border-bottom: 2px solid var(--clr-primary);
+  color: var(--clr-primary);
 }
