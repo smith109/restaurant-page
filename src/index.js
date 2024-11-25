@@ -1,6 +1,7 @@
 import loadHome from "./components/home/loadHome.js"
 import loadMenu from "./components/menu/loadMenu.js";
 import loadContact from "./components/contact/loadContact.js";
+import './style.css';
 
 const nav = document.querySelector('nav');
 nav.addEventListener('click', switchPageComponent);
