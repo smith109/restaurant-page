@@ -1,7 +1,10 @@
 :root {
   --clr-primary: #f0c27b;
+  --clr-secondary: #3c2a21;
   --clr-neutral-lt: #f4f4f9;
-  --clr-neutral-dk: #333333;
+  --clr-neutral-ltr: #ffffff;
+  --clr-neutral-dk: #666666;
+  --clr-neutral-dkr: #333333;
   --ff-base: Inter, Roboto, 'Helvetica Neue',
     'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 }
@@ -15,7 +18,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: var(--clr-neutral-lt);
-  color: var(--clr-neutral-dk);
+  color: var(--clr-neutral-dkr);
   font-family: var(--ff-base);
 }
 
@@ -60,13 +63,13 @@ h6 {
 }
 
 header {
-  background: var(--clr-neutral-dk);
+  background: var(--clr-secondary);
   color: var(--clr-neutral-lt);
   padding: 0.65rem;
 }
 
 nav button {
-  background-color: var(--clr-neutral-dk);
+  background-color: var(--clr-secondary);
   border: 2px solid transparent;
   font-size: 1.3rem;
   color: inherit;
@@ -79,6 +82,7 @@ nav button:hover {
 
 div#content .hero {
   background: var(--clr-primary);
+  color: var(--clr-secondary);
   text-align: center;
   padding: 3.25rem 1.25rem;
 }
@@ -104,7 +108,7 @@ div#content .section {
 }
 
 div#content .section {
-  background: #ffffff;
+  background: var(--clr-neutral-ltr);
   max-width: 800px;
   padding: 1.25rem;
   border-radius: 5px;
@@ -117,4 +121,68 @@ div#content .section {
 
 .section>p {
   font-size: 1.2rem;
+}
+
+div#content .header {
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+div#content .menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.2rem 1.2rem;
+}
+
+.menu-category {
+  margin-bottom: 1.8rem;
+}
+
+.menu-category h2 {
+  border-bottom: 2px solid #c59b6d;
+  color: var(--clr-secondary);
+  font-size: 1.8rem;
+  padding-bottom: 0.3rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #dddddd;
+  gap: 20px;
+}
+
+.menu-item p:first-of-type,
+.menu-item p:last-of-type {
+  font-weight: 600;
+}
+
+.menu-item p:first-of-type {
+  color: var(--clr-secondary);
+  font-size: 1.4rem;
+}
+
+.menu-item p:last-of-type {
+  color: var(--clr-secondary);
+  font-size: 1.2rem;
+}
+
+.menu-item p {
+  font-size: 0.9rem;
+  color: var(--clr-neutral-dk);
+  margin-top: 0.6rem;
 }
