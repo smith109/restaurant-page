@@ -36,6 +36,29 @@ ul {
   gap: 15px;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
 header {
   background: var(--clr-neutral-dk);
   color: var(--clr-neutral-lt);
@@ -52,4 +75,46 @@ nav button {
 nav button:hover {
   border-bottom: 2px solid var(--clr-primary);
   color: var(--clr-primary);
+}
+
+div#content .hero {
+  background: var(--clr-primary);
+  text-align: center;
+  padding: 3.25rem 1.25rem;
+}
+
+.hero>h1 {
+  font-size: 3rem;
+  margin-bottom: .6rem;
+}
+
+.hero>p {
+  font-size: 1.3rem;
+}
+
+div#content img,
+div#content .section {
+  margin: 1.25rem auto;
+}
+
+.img-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+div#content .section {
+  background: #ffffff;
+  max-width: 800px;
+  padding: 1.25rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section>h2 {
+  font-size: 1.7rem;
+}
+
+.section>p {
+  font-size: 1.2rem;
 }
