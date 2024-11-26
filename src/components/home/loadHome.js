@@ -1,4 +1,13 @@
 import createElement from "../../createElement.js";
+import coffeeImage from './coffee.jpg';
+
+function createImage(src, alt, width, height) {
+  return createElement(
+    'div',
+    { class: 'img-container' },
+    createElement('img', { src, alt, width, height })
+  );
+}
 
 export default function loadHome() {
   const heroDiv = createElement(
@@ -6,6 +15,13 @@ export default function loadHome() {
     { class: 'hero' },
     createElement('h1', {}, 'Rêverie Café'),
     createElement('p', {}, 'Discover the art of coffee')
+  );
+
+  const imgContainer = createImage(
+    coffeeImage,
+    'Three people holding beverages',
+    800,
+    500
   );
 
   const aboutDiv = createElement(
@@ -17,5 +33,5 @@ export default function loadHome() {
     )
   );
 
-  document.querySelector('#content').append(heroDiv, aboutDiv);
+  document.querySelector('#content').append(heroDiv, imgContainer, aboutDiv);
 }
