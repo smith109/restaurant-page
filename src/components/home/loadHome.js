@@ -1,5 +1,6 @@
 import createElement from "../../createElement.js";
 import coffeeImage from './coffee.jpg';
+import './home.css';
 
 function createImage(src, alt, width, height) {
   return createElement(
