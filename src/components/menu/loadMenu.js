@@ -1,5 +1,6 @@
 import createElement from "../../createElement.js";
 import { groupedMenu } from "./menuData.js";
+import './menu.css';
 
 function renderMenuItem(item) {
   return createElement(
