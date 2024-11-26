@@ -27,14 +27,14 @@ function renderMenuCategory(categoryName, items) {
 }
 
 function renderMenu() {
-  const menuSection = createElement('div', { class: 'menu-section' });
+  const container = createElement('div', { class: 'container' });
 
   Object.entries(groupedMenu).forEach(([categoryName, items]) => {
     const menuCategory = renderMenuCategory(categoryName, items);
-    menuSection.append(menuCategory);
+    container.append(menuCategory);
   });
 
-  return menuSection;
+  return container;
 }
 
 export default function loadMenu() {
@@ -45,5 +45,11 @@ export default function loadMenu() {
     createElement('p', {}, 'Coffee is always a good idea')
   );
 
-  document.querySelector('#content').append(header, renderMenu());
+  const menuSection = createElement(
+    'div',
+    { class: 'menu-section' },
+    renderMenu()
+  );
+
+  document.querySelector('#content').append(header, menuSection);
 }
