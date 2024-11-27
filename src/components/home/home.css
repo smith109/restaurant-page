@@ -1,42 +1,24 @@
 div#content .hero {
-  background: var(--clr-primary);
-  color: var(--clr-secondary);
-  text-align: center;
   padding: 3.25rem 1.25rem;
 }
 
 .hero>h1 {
   font-size: 3rem;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 .hero>p {
   font-size: 1.3rem;
 }
 
-div#content img,
-div#content .section {
+div#content img {
   margin: 1.25rem auto;
 }
 
-.img-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-div#content .section {
-  background: var(--clr-neutral-ltr);
-  max-width: 800px;
-  padding: 1.25rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.section>h2 {
+.section h2 {
   font-size: 1.7rem;
 }
 
-.section>p {
+.section p {
   font-size: 1.2rem;
 }

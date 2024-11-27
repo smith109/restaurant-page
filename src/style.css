@@ -22,6 +22,16 @@ body {
   font-family: var(--ff-base);
 }
 
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
 input,
 button,
 textarea {
@@ -32,20 +42,9 @@ button {
   cursor: pointer;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
-}
-
 p,
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   overflow-wrap: break-word;
 }
 
@@ -54,28 +53,63 @@ p {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   text-wrap: balance;
 }
 
-header {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+nav button,
+footer {
   background: var(--clr-secondary);
   color: var(--clr-neutral-lt);
+}
+
+header,
+footer {
   padding: 0.65rem;
 }
 
 nav button {
-  background-color: var(--clr-secondary);
   border: 2px solid transparent;
   font-size: 1.3rem;
-  color: inherit;
 }
 
 nav button:hover {
   border-bottom: 2px solid var(--clr-primary);
   color: var(--clr-primary);
+}
+
+div#content>div:first-child {
+  background: var(--clr-primary);
+  color: var(--clr-secondary);
+  text-align: center;
+}
+
+div#content .section,
+div#content .contact-section {
+  background: var(--clr-neutral-ltr);
+  max-width: 800px;
+  padding: 1.25rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1.25rem auto;
+}
+
+div#content .header {
+  padding: 1.25rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.3rem;
+  font-style: italic;
 }
