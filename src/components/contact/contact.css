@@ -1,0 +1,51 @@
+.info-section h2,
+form h2 {
+  font-size: 1.7rem;
+}
+
+.info-section p,
+.form-row label {
+  font-size: 1.2rem;
+}
+
+.info-section p {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-row label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+  outline-color: var(--clr-primary);
+}
+
+.form-row textarea {
+  resize: none;
+}
+
+.form-row button {
+  background: var(--clr-secondary);
+  color: var(--clr-neutral-lt);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: 600;
+  display: block;
+  margin: 0.4rem;
+}
+
+.form-row button:hover {
+  background: var(--clr-neutral-ltr);
+  color: var(--clr-secondary);
+  border: 2px solid var(--clr-secondary);
+}
