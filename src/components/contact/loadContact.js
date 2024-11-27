@@ -1,4 +1,5 @@
 import createElement from "../../createElement.js";
+import './contact.css';
 
 function createFormInput(type, id, rows, cols) {
   if (type === 'textarea') {
