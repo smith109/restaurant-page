@@ -2,6 +2,7 @@ import { loadHomePage } from './modules/loadHomePage.js';
 import { loadMenuPage } from './modules/loadMenuPage.js';
 import { loadAboutPage } from './modules/loadAboutPage.js';
 import { loadContactPage } from './modules/loadContactPage.js';
+import './css/styles.css';
 
 const navBtns = document.querySelector('.nav-btns');
 navBtns.addEventListener('click', loadSelectedPage);
