@@ -1,4 +1,4 @@
-import restaurantImage from '../assets/restaurant.jpg';
+import restaurantImage from '../assets/img/restaurant.jpg';
 
 export function loadAboutPage() {
   const contentDiv = document.querySelector('#content');
