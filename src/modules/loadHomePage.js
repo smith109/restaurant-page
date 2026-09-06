@@ -1,3 +1,5 @@
+import '../css/home.css'; 
+
 export function loadHomePage() {
   const contentDiv = document.querySelector('#content');
   const homePage = document.createElement('div');
