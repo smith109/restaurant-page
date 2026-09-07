@@ -1,4 +1,5 @@
 import { getMenu } from './getMenu.js';
+import '../css/menu.css';
 
 function createMenuItems(menuData = []) {
   const menuItems = document.createElement('div');
