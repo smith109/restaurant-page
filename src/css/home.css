@@ -1,0 +1,24 @@
+div.home-page > .hero {
+  min-height: 100dvh;
+  text-align: center;
+  place-content: center;
+  background-size: cover;
+  background-position: center;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../assets/img/eggs.jpg');
+}
+
+.hero > h1 {
+  line-height: 0.8;
+  position: relative;
+  letter-spacing: 0.64rem;
+  font-size: var(--xl-font-size);
+}
+
+.hero > p {
+  max-width: 600px;
+  margin: 32px auto;
+  letter-spacing: 1px;
+  font-size: var(--medium-font-size);
+}
