@@ -6,7 +6,6 @@ const contactForm = new Form();
 export function loadContactPage() {
   const contentDiv = document.querySelector('#content');
   const contactPage = document.createElement('div');
-  const imageContainer = document.createElement('div');
   const formContainer = document.createElement('div');
   const heading = document.createElement('h1');
   const subheading = document.createElement('h2');
@@ -14,7 +13,6 @@ export function loadContactPage() {
   const form = createForm('contact-form', contactForm.getFields());
 
   contactPage.classList.add('contact-page');
-  imageContainer.classList.add('contact-image');
   formContainer.classList.add('form-container');
 
   heading.textContent = 'Contact';
@@ -24,7 +22,7 @@ export function loadContactPage() {
      We will help point you in the right direction.`;
 
   formContainer.append(heading, subheading, subtext, form);
-  contactPage.append(imageContainer, formContainer);
+  contactPage.append(formContainer);
   contentDiv.append(contactPage);
 }
 
