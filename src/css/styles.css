@@ -40,10 +40,12 @@
   --clr-primary-bg: #181b16;
   --clr-header-bg: rgba(17, 19, 16, 0.9);
   --clr-primary-text: #fffdf8;
+  --clr-secondary-text: #aaa99f;
   --clr-nav-links: #eeeeee;
   --ff-primary-text: 'Open Sans', sans-serif;
   --ff-secondary-text: 'Lora', serif;
-  --medium-font-size: clamp(1rem, 1.2vw, 1.3rem);
+  --medium-font-size: clamp(1rem, 2vw, 1.3rem);
+  --large-font-size: clamp(2rem, 4vw, 4rem);
   --xl-font-size: clamp(5rem, 12vw, 10rem);
 }
 
