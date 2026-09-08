@@ -1,4 +1,5 @@
 import { Form, createForm } from './form.js';
+import '../css/contact.css';
 
 const contactForm = new Form();
 
