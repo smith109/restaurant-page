@@ -1,8 +1,3 @@
-div.menu-page {
-  min-height: 100dvh;
-  padding: 120px 10vw 5vw;
-}
-
 div.menu-page p {
   color: var(--clr-secondary-text);
 }

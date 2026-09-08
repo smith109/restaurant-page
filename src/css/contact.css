@@ -1,8 +1,6 @@
 div.contact-page {
   display: flex;
-  min-height: 100dvh;
   justify-content: center;
-  padding: 120px 10vw 5vw;
 }
 
 .form-container > h1 {

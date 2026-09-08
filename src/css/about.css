@@ -1,11 +1,9 @@
 div.about-page {
   display: flex;
   gap: 50px;
-  min-height: 100dvh;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  padding: 120px 10vw 5vw;
 }
 
 .about-image > img {

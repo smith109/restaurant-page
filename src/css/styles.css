@@ -134,3 +134,7 @@ header {
 .nav-btns > button:hover {
   color: var(--clr-accent-lt);
 }
+
+div#content > div:not(.home-page) {
+  padding: 120px 10vw 5vw;
+}
