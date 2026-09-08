@@ -1,0 +1,46 @@
+div.about-page {
+  display: flex;
+  gap: 50px;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  padding: 120px 10vw 5vw;
+}
+
+.about-image > img {
+  height: 600px;
+}
+
+.about-text > h1 {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: var(--clr-accent-dk);
+}
+
+.about-text > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0.9;
+  margin-bottom: 32px;
+}
+
+.about-text > p {
+  font-size: 1rem;
+  max-width: 540px;
+  margin-bottom: 30px;
+  color: var(--clr-secondary-text);
+}
+
+.about-text > .sub-text {
+  color: #ddd4c4;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 16px 0;
+  padding-left: 25px;
+  font-family: var(--ff-secondary-text);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-left: 5px solid var(--clr-accent-dk);
+}

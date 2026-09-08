@@ -88,6 +88,11 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 header {
   top: 0;
   width: 100%;
