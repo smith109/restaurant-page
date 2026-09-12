@@ -9,7 +9,7 @@ navBtns.addEventListener('click', loadSelectedPage);
 
 function setActiveBtn(button) {
   const activeBtn = document.querySelector('.active');
-  activeBtn.classList.remove('active');
+  activeBtn?.classList.remove('active');
   button.classList.add('active');
 }
 
