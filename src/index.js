@@ -4,8 +4,15 @@ import { loadAboutPage } from './modules/loadAboutPage.js';
 import { loadContactPage } from './modules/loadContactPage.js';
 import './css/styles.css';
 
+const pages = {
+  home: loadHomePage,
+  menu: loadMenuPage,
+  about: loadAboutPage,
+  contact: loadContactPage,
+};
+
 const navBtns = document.querySelector('.nav-btns');
-navBtns.addEventListener('click', loadSelectedPage);
+navBtns.addEventListener('click', handleNavigation);
 
 function setActiveBtn(button) {
   const activeBtn = document.querySelector('.active');
@@ -13,29 +20,19 @@ function setActiveBtn(button) {
   button.classList.add('active');
 }
 
-function loadSelectedPage(event) {
+function handleNavigation(event) {
   const contentDiv = document.querySelector('#content');
   const button = event.target.closest('button');
 
   if (!button) return;
 
-  contentDiv.replaceChildren();
-  setActiveBtn(button);
+  const pageKey = button.dataset.page;
+  const loadPage = pages[pageKey];
 
-  if (button.classList.contains('home-btn')) {
-    loadHomePage();
-  }
-
-  if (button.classList.contains('menu-btn')) {
-    loadMenuPage();
-  }
-
-  if (button.classList.contains('about-btn')) {
-    loadAboutPage();
-  }
-
-  if (button.classList.contains('contact-btn')) {
-    loadContactPage();
+  if (loadPage) {
+    contentDiv.replaceChildren();
+    setActiveBtn(button);
+    loadPage();
   }
 }
 
