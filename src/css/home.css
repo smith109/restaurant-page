@@ -1,4 +1,5 @@
 div.home-page > .hero {
+  display: grid;
   min-height: 100dvh;
   text-align: center;
   place-content: center;
