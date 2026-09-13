@@ -8,6 +8,14 @@ This is the restaurant page project from the Odin Project. The purpose of this p
 - Using JavaScript bundlers such as Webpack
 - Using DOM manipulation to dynamically create HTML elements
 
+## Contributors
+[Dominion Okori](https://github.com/LordDominion141)
+
+- Found bug in ```setActiveBtn``` and suggested fix
+- Helped refactor ```loadSelectedPage``` function to ```handleNavigation```
+- Suggested fix to properly center homepage content
+- Thank you again for reviewing my code!!
+
 ## Image Credits
 
 - [Photo](https://unsplash.com/photos/a-white-plate-topped-with-an-egg-and-greens-jr6Ll1YAPvQ) By [akub Żerdzicki](https://unsplash.com/@jakubzerdzicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
